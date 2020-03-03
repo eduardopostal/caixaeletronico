@@ -5,10 +5,17 @@ import br.com.project.caixaeletronico.casssete.DispensaCassete;
 
 public class CaixaEletronico {
 
-	private Cassete casseteA = new Cassete(100);
-	private Cassete casseteB = new Cassete(50);
-	private Cassete casseteC = new Cassete(20);
-	private Cassete casseteD = new Cassete(10);
+	private Cassete casseteA;
+	private Cassete casseteB;
+	private Cassete casseteC;
+	private Cassete casseteD;
+
+	public CaixaEletronico(int cedulaCasseteA, int cedulaCasseteB, int cedulaCasseteC, int cedulaCasseteD) {
+		casseteA = new Cassete(cedulaCasseteA);
+		casseteB = new Cassete(cedulaCasseteB);
+		casseteC = new Cassete(cedulaCasseteC);
+		casseteD = new Cassete(cedulaCasseteD);
+	}
 
 	public DispensaCaixaEletronico sacar(int valor) {
 

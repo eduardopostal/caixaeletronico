@@ -24,6 +24,7 @@ public class DispensaCassete {
 		return valorNaoDispensado;
 	}
 
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
